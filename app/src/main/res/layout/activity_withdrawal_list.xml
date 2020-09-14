@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/ui_spacing_normal"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Withdrawal Manager"
+        android:textAlignment="center"
+        android:fontFamily="@font/sans_regular"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="Date:"
+            android:textColor="#000000"
+            android:textSize="@dimen/regular_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Total Withdrawals:"
+            android:textColor="#000000"
+            android:textSize="@dimen/regular_text" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Customer Details"
+        android:textAlignment="center"
+        android:fontFamily="@font/sans_regular"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/DarkGreen"
+            android:baselineAlignBottom="true"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_200"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/ui_spacing_small"
+                android:layout_marginTop="1dp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:text="No:"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/regular_text" />
+
+                <TextView
+                    android:id="@+id/textviewid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:scaleType="centerCrop"
+                    android:text="ID NUMBER:"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/regular_text" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Viewbtn"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@color/md_yellow_500"
+                    android:text="VIEW"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

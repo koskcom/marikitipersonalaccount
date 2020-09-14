@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgdepo"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:foregroundGravity="right"
+                android:gravity="right"
+                android:paddingRight="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/marikiti_logo" />
+
+
+            <TextView
+                style="@style/actionBarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/calibri"
+                android:text="Credit Statement"
+                android:textAlignment="textStart" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <View style="@style/Divider" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/header_credit_statement" />
+
+    <include layout="@layout/credit_statement_purchase" />
+
+</LinearLayout>

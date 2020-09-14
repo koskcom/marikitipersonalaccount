@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:background="@color/md_yellow_500"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:layout_width="176dp"
+        android:layout_height="100dp"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:src="@drawable/marikiti_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="@string/developed_By"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bariol_bold"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="www.ics.co.ke"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="Contact = 0720-000-000"
+        android:textSize="12sp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+</LinearLayout>

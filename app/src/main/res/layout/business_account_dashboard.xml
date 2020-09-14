@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/margin_normal"
+    tools:context=".ui.activities.PersonalDashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="Business account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+        <View style="@style/Divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:maxLines="3"
+                android:text="Date -:"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textviewbsDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/textView1"
+                android:layout_toRightOf="@id/textView1"
+                android:gravity="right"
+                android:maxLines="3"
+                android:textColor="@android:color/black" />
+
+
+        </RelativeLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDeposits"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height"
+                android:layout_weight=".5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_conner_radius"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_top_up"
+                    android:gravity="center">
+
+                    <!-- <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:background="@color/grey_200"
+                         android:gravity="center"
+                         android:orientation="vertical">
+
+                         <ImageView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             app:srcCompat="@drawable/ic_top_up" />
+
+                     </LinearLayout>-->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSendFunds"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height"
+                android:layout_weight=".5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_conner_radius"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_send"
+                    android:gravity="center">
+
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:background="@color/grey_200"
+                     android:gravity="center"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         app:srcCompat="@drawable/ic_send" />
+
+                 </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewWithdrawFunds"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height"
+                android:layout_weight=".5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_conner_radius"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_withdraw"
+                    android:gravity="center">
+
+                </LinearLayout>
+                <!-- <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:background="@color/grey_200"
+                     android:gravity="center"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         app:srcCompat="@drawable/ic_withdraw" />
+
+                 </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewBankFundsTransfer"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height"
+                android:layout_weight=".5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_conner_radius"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_bank_transfer"
+                    android:gravity="center">
+
+                </LinearLayout>
+                <!--<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_200"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_bank_transfer" />
+
+                </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewDepositsManager"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height"
+                android:layout_weight=".5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_conner_radius"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_deposit"
+                    android:gravity="center">
+
+                </LinearLayout>
+                <!--<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_200"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_deposit" />
+
+                </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewWithdrawalsManager"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height"
+                android:layout_weight=".5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_conner_radius"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_withdraw_manager"
+                    android:gravity="center">
+
+                </LinearLayout>
+                <!-- <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:background="@color/grey_200"
+                     android:gravity="center"
+                     android:orientation="vertical">
+
+                     <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         app:srcCompat="@drawable/ic_withdraw_manager" />
+
+                 </LinearLayout>-->
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="Transaction Statements"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <View style="@style/Divider" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewCreditPurchase"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/card_height"
+                android:layout_weight=".5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_conner_radius"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_yellow_100"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="126dp"
+                        android:layout_height="79dp"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/credit_statement_logo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Statement"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsze"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_slidpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="1dp"
+                app:cardCornerRadius="4dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="4dp" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/bg_overlay" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sans_regular"
+            android:text="@string/ics"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+</ScrollView>
+

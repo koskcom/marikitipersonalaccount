@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/ui_spacing_normal"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="@dimen/ui_spacing_small"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_profile"
+            android:baselineAlignBottom="true"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_spacing_small"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textviewcustomername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="4dp"
+                    android:scaleType="centerCrop"
+                    android:text="Customer Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/regular_text" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_spacing_small"
+                android:padding="4dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textviewphonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:paddingBottom="@dimen/ui_spacing_xsmall"
+                    android:text="Phone number"
+                    android:textColor="#010203"
+                    android:textSize="@dimen/regular_text" />
+
+                <TextView
+                    android:id="@+id/textviewcredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:textAlignment="viewEnd"
+                    android:text="Credit"
+                    android:textColor="#010203"
+                    android:textSize="@dimen/regular_text" />
+
+                <TextView
+                    android:id="@+id/textviewdebit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:text="Debit"
+                    android:textColor="#010203"
+                    android:textSize="@dimen/regular_text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textviewdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:paddingLeft="@dimen/ui_spacing_small"
+                android:paddingTop="4dp"
+                android:scaleType="centerCrop"
+                android:text="Date:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/regular_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/Divider" />
+</LinearLayout>

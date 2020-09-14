@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:orientation="vertical"
+    android:padding="6dp"
+    tools:context=".ui.views.activities.personalaccount.WithdrawFundsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:background="@color/md_yellow_50"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp">
+
+
+                    <TextView
+                        android:id="@+id/no"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/txtviewbankname"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="8sp" />
+
+
+                    <TextView
+                        android:id="@+id/txviewbankac"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/txtviewmarikitino"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/txtviewamount"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/txttransactiontype"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="8sp" />
+
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:orientation="vertical"
+    tools:context=".ui.views.activities.personalaccount.WithdrawFundsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Deposit Manager"
+        android:textAlignment="center"
+        android:fontFamily="@font/sans_regular"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="Date"
+        android:fontFamily="@font/sans_regular"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <include layout="@layout/list_view" />
+
+</RelativeLayout>

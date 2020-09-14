@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/ui_spacing_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/ui_spacing_small"
+            android:layout_marginTop="@dimen/ui_spacing_small"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimary"
+            android:contentDescription="cane_census"
+            android:baselineAlignBottom="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_spacing_small"
+                android:layout_marginTop="@dimen/ui_spacing_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtviewbankname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="@dimen/ui_spacing_xsmall"
+                    android:scaleType="centerCrop"
+                    android:text="Bank name"
+                    android:textColor="@color/text_main_color"
+                    android:textSize="@dimen/regular_text" />
+
+                <TextView
+                    android:id="@+id/txviewbankac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/ui_spacing_xsmall"
+                    android:text="bank a/a"
+                    android:textColor="@color/text_main_color"
+                    android:textSize="@dimen/regular_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_spacing_small"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtviewmarikitino"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/ui_spacing_xsmall"
+                    android:paddingLeft="@dimen/ui_spacing_small"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:text="marikiti no"
+                    android:textColor="@color/text_main_color"
+                    android:textSize="@dimen/small_text" />
+
+                <TextView
+                    android:id="@+id/txtviewamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="end|center_vertical"
+                    android:paddingTop="@dimen/ui_spacing_small"
+                    android:text="Amount"
+                    android:textColor="@color/text_main_color"
+                    android:textSize="@dimen/small_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

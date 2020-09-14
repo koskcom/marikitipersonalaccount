@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Dashboard</item>
+        <item>QR Generator</item>
+        <item>QR Scanner</item>
+        <item>My Account</item>
+        <item>Messages</item>
+        <item>Logout</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_qr_scan</item>
+        <item>@drawable/ic_qrcode</item>
+        <item>@drawable/ic_person_outline_black_24dp</item>
+        <item>@drawable/ic_message_black_24dp</item>
+        <item>@drawable/ic_power_settings_new_black_24dp</item>
+        <item>0</item>
+        <item>@drawable/ic_logout_grey600_24dp</item>
+    </array>
+
+</resources>

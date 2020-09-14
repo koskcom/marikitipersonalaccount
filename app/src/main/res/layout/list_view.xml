@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/itemsList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:divider="#008000"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/white" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/grey_200"
+    android:orientation="vertical"
+    tools:context=".ui.activities.PersonalDashboardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_horizontal_margin"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/generated_qr_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/realtime_qr_generator"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/qr_caption"
+                android:layout_width="@dimen/qr_code_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/app_name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_horizontal_margin"
+                android:visibility="invisible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/type_here_to_generate_qr">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/qr_input_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:layout_marginTop="10dip"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:inputType="textMultiLine" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/ocr_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/button_scan_ocr" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
